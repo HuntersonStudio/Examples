@@ -1,12 +1,15 @@
 If you want to add right-click functionality to your custom EditorWindow, simply use the 'IHasCustomMenu' interface!
 
 #begin-code
-public void AddItemsToMenu(GenericMenu menu)
+public class ExampleWindow : EditorWindow, IHasCustomMenu
 {
-    menu.AddItem(new GUIContent("Refresh"), false, () =>
+    public void AddItemsToMenu(GenericMenu menu)
     {
-        //Refresh the Window
-    });
+        menu.AddItem(new GUIContent("Refresh"), false, () =>
+        {
+            Repaint();
+        });
+    }
 }
 #end-code
 
