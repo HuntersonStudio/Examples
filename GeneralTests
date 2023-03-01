@@ -12,4 +12,12 @@ public void Add(int foo)
 
 Click on [this](https://twitter.com/HuntersonStudio) link to see Hunterson Studio's Twitter!
 
+#begin-code
+public void Add(int foo)
+{
+    index += foo;
+}
+#end-code
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elementum facilisis placerat
+
 ![Alt text for the Hunterson Studio Logo](https://huntersonstudio.com/images/hunterson_logo_big.svg)
